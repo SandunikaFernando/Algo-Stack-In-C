@@ -6,29 +6,29 @@ struct Stack{
 }i;
 
 void push(int data){​​​​​​​
-
     i.top++;
-
     i.arr[i.top]=data;
-
 }​​​​​​​
 
 int pop(){​​​​​​​
-
     int data;
-
     data=i.arr[i.top];
-
     i.top--;
-
     return data;
-
 }​​​​​​​
 
 
 // is full function here
 
-// is empty function here
+int isempty(){​​​​​​​
+
+    if(i.top==-1){​​​​​​​
+        return 1;
+    }​​​​​​​
+    else{​​​​​​​
+        return 0;
+    }​​​​​​​
+}​​​​​​​
 
 int main(){
 
