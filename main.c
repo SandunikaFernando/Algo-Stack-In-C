@@ -18,7 +18,22 @@ int pop(){​​​​​​​
 }​​​​​​​
 
 
-// is full function here
+int isfull(){​​​​​
+
+    
+
+    if(i.top==2){​​​​​
+
+        return 1;
+
+    }​​​​​
+
+    else{​​​​​
+
+        return 0;
+
+    }​​​​​
+
 
 int isempty(){​​​​​​​
 
