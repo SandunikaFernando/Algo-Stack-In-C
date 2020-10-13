@@ -25,7 +25,7 @@ int isfull(){​​​​​
     else{​​​​​
         return 0;
     }​​​​​
-
+}
 int isempty(){​​​​​​​
     if(i.top==-1){​​​​​​​
         return 1;
