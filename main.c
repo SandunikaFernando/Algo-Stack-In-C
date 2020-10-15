@@ -1,25 +1,25 @@
 #include<stdio.h>
 struct Stack{
 
-    int top,arr[3];
+    int top,array[3];
 
-}i;
+}st;
 
 void push(int data){​​​​​​​
-    i.top++;
-    i.arr[i.top]=data;
+    st.top++;
+    st.array[st.top]=data;
 }​​​​​​​
 
 int pop(){​​​​​​​
     int data;
-    data=i.arr[i.top];
-    i.top--;
+    data=st.array[st.top];
+    st.top--;
     return data;
 }​​​​​​​
 
 
 int isfull(){​​​​​
-   if(i.top==2){​​​​​
+   if(st.top==2){​​​​​
         return 1;
     }​​​​​
     else{​​​​​
@@ -27,7 +27,7 @@ int isfull(){​​​​​
     }​​​​​
 }
 int isempty(){​​​​​​​
-    if(i.top==-1){​​​​​​​
+    if(st.top==-1){​​​​​​​
         return 1;
     }​​​​​​​
     else{​​​​​​​
@@ -37,21 +37,21 @@ int isempty(){​​​​​​​
 
 int main(){
 
-    i.top=-1;
-    int Data,op;
-    printf("Choos a option \n");
-    printf("Press (1) to push data : \n");
-    printf("Press (2) to pop data : \n");
-    printf("Press (3) to check stack is full : \n");
-    printf("Press (4) to check stack is empty : \n");
-    printf("Press (5) to check top value : \n");
-    printf("Press (6) to exit from code : \n");
+    st.top=-1;
+    int Data,inp;
+    printf("Choos a option from following.. \n");
+    printf("Press Number 1 to push data : \n");
+    printf("Press Number 2 to pop data : \n");
+    printf("Press Number 3 to check stack is full : \n");
+    printf("Press Number 4 to check stack is empty : \n");
+    printf("Press Number 5 to check top value : \n");
+    printf("Press Number 6 to exit from code : \n");
 
-    op=0;
-    while (op!=6) {​​​​​
+    inp=0;
+    while (inp!=6) {​​​​​
         printf("\n");
-        printf("Choos option : ");
-        scanf("%d",&op);
+        printf("Please enter a option : ");
+        scanf("%d",&inp);
         if(op==1){​​​​​
             if(!isfull()){​​​​​
                 printf("Enter a data : ");
@@ -62,7 +62,7 @@ int main(){
                 printf("Stack is full..! \n");
             }​​​​​
         }​​​​​
-        else if(op==2){​​​​​
+        else if(inp==2){​​​​​
             if(!isempty()){​​​​​
                 printf("%d removed \n",pop());
             }​​​​​
@@ -70,7 +70,7 @@ int main(){
                 printf("Stack is empty..! \n");
             }​​​​​
         }​​​​​
-        else if(op==3){​​​​​
+        else if(inp==3){​​​​​
             if(!isfull()){​​​​​
                 printf("Stack is not full \n");
             }​​​​​
@@ -78,7 +78,7 @@ int main(){
                 printf("Stack is full..! \n");
             }​​​​​
         }​​​​​
-        else if(op==4){​​​​​
+        else if(inp==4){​​​​​
             if(!isempty()){​​​​​
                 printf("Stack is not empty \n");
             }​​​​​
@@ -86,14 +86,14 @@ int main(){
                 printf("Stack is empty..! \n");
             }​​​​​
         }​​​​​
-        else if(op==5){​​​​​
-            printf("Top value is : %d \n",i.arr[i.top]);
+        else if(inp==5){​​​​​
+            printf("Top value is : %d \n",st.arr[st.top]);
         }​​​​​
-        else if (op==6){​​​​​
+        else if (inp==6){​​​​​
             break;
         }​​​​​
         else{​​​​​
-            printf("invalid operator..! \n");
+            printf("invalid Input..! \n");
         }​​​​​
     }​​​​​
 }
