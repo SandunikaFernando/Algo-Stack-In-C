@@ -1,25 +1,25 @@
 #include<stdio.h>
 struct Stack{
 
-    int top,array[3];
+    int Top,Array[3];
 
 }st;
 
 void push(int data){​​​​​​​
-    st.top++;
-    st.array[st.top]=data;
+    st.Top++;
+    st.Array[st.Top]=data;
 }​​​​​​​
 
 int pop(){​​​​​​​
     int data;
-    data=st.array[st.top];
-    st.top--;
+    data=st.Array[st.Top];
+    st.Top--;
     return data;
 }​​​​​​​
 
 
 int isfull(){​​​​​
-   if(st.top==2){​​​​​
+   if(st.Top==2){​​​​​
         return 1;
     }​​​​​
     else{​​​​​
@@ -27,7 +27,7 @@ int isfull(){​​​​​
     }​​​​​
 }
 int isempty(){​​​​​​​
-    if(st.top==-1){​​​​​​​
+    if(st.Top==-1){​​​​​​​
         return 1;
     }​​​​​​​
     else{​​​​​​​
@@ -37,7 +37,7 @@ int isempty(){​​​​​​​
 
 int main(){
 
-    st.top=-1;
+    st.Top=-1;
     int Data,inp;
     printf("Choos a option from following.. \n");
     printf("Press Number 1 to push data : \n");
@@ -87,7 +87,7 @@ int main(){
             }​​​​​
         }​​​​​
         else if(inp==5){​​​​​
-            printf("Top value is : %d \n",st.arr[st.top]);
+            printf("Top value is : %d \n",st.Arr[st.Top]);
         }​​​​​
         else if (inp==6){​​​​​
             break;
